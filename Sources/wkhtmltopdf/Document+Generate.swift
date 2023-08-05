@@ -12,8 +12,6 @@ extension Document {
             
             // Save input pages to temp files, and build up args to WeasyPrint
             var weasyArgs: [String] = [
-                "-s", self.paperSize,
-                "-m", "margin:\(self.topMargin)mm \(self.rightMargin)mm \(self.bottomMargin)mm \(self.leftMargin)mm",
             ]
             
             weasyArgs += self.weasyArgs
